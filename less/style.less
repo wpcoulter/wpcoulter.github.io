@@ -1,0 +1,71 @@
+
+
+.font-smoothing() {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #48d2bd;
+  color: #fff;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  .font-smoothing;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  min-width: 320px;
+  margin: -30px 0 0;
+  h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    a {
+      display: inline-block;
+      background: #000;
+      background: fade(#000, 5%);
+      padding: 10px 15px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      color: #fff;
+      text-decoration: none;
+      -webkit-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease;
+      &:hover {
+        background: fade(#000, 10%);
+      }
+    }
+  }
+  p {
+    margin-bottom: 30px;
+    color: #d6f2e4;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 20px;
+  }
+  .social-media {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        margin: 0 16px 0 0;
+        font-size: 14px;
+        &:last-child {
+          margin: 0;
+        }
+        a {
+          display: block;
+          width: 16px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
